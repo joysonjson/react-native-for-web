@@ -1,19 +1,21 @@
 import React, {useState} from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import Router from './src/router';
 
 const App = () => {
   const [count, setCount] = useState(0);
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Hello from {'\n'}React Native Web!</Text>
-      <TouchableOpacity
-        onPress={() => setCount(count + 1)}
-        style={styles.button}>
-        <Text>Click me!</Text>
-      </TouchableOpacity>
+    // <View style={styles.container}>
+    //   <Text style={styles.title}>Hello from {'\n'}React Native Web!</Text>
+    //   <TouchableOpacity
+    //     onPress={() => setCount(count + 1)}
+    //     style={styles.button}>
+    //     <Text>Click me!</Text>
+    //   </TouchableOpacity>
 
-      <Text>You clicked {count} times!</Text>
-    </View>
+    //   <Text>You clicked {count} times!</Text>
+    // </View>
+    <Router />
   );
 };
 
